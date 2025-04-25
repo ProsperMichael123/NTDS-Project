@@ -251,30 +251,27 @@
 
                 <div class="contact-form" data-aos="flip-left">
                     <h2>How Can We Help?</h2>
-                    <form action="#">
-                        <!-- <label for="name">Name:</label> -->
+                    <form id="contact-form" action="#">
                         <input type="text" id="name" name="name" placeholder="Your Name" required>
-
-                        <!-- <label for="email">Email:</label> -->
                         <input type="email" id="email" name="email" placeholder="Your Email" required>
-
-                        <!-- <label for="phone">Phone Number:</label> -->
                         <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
-
-                        <label for="info-type">What Information Do You Need?</label>
-                        <select id="info-type" name="info-type">
+                
+                        <label for="service">What Information Do You Need?</label>
+                        <select id="service" name="service">
                             <option value="service">Service Inquiry</option>
                             <option value="pricing">Pricing</option>
                             <option value="consultation">Consultation</option>
                         </select>
-
-                        <!-- <label for="message">What Else Do You Need?</label> -->
-                        <textarea id="message" name="message" placeholder="Write your message here..." rows="4"
-                            required></textarea>
-
+                
+                        <textarea id="message" name="message" placeholder="Write your message here..." rows="4" required></textarea>
+                
+                        <!-- Placeholder for success message -->
+                        <div id="success-message" style="color: green; font-weight: bold; margin-top: 10px;"></div>
+                
                         <button type="submit" class="submit-btn">Submit</button>
                     </form>
                 </div>
+                
             </article>
         </section>
 
@@ -293,5 +290,6 @@
             once: true // Animation only happens once
         });
     </script>
+    <script src="./Contact-Us/script.js"></script>
 </body>
 </html>
