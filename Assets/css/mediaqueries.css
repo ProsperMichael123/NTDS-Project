@@ -1,0 +1,245 @@
+/* FOR THE IPAD SCREEN */
+@media screen and (max-width: 1024px) {
+
+    h1 {
+        font-size: 30px !important;
+        margin: 20px 0 !important;
+    }
+
+    h2 {
+        font-size: 20px !important;
+    }
+
+    h3 {
+        font-size: 19px !important;
+    }
+
+    h4 {
+        font-size: 16px !important;
+    }
+
+    p {
+        font-size: 16px !important;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        height: 100%;
+        width: 250px;
+        background-color: white;
+        text-align: left;
+        padding: 50px 20px 20px 20px;
+        box-shadow: 4px 0 6px rgba(0, 0, 0, 0.1);
+        transition: left 0.3s ease-in-out;
+        z-index: 1000;
+    }
+
+    .nav-links.active {
+        left: 0;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+    }
+
+    .nav-links ul li {
+        margin: 15px 0;
+    }
+
+    .nav-btn-1 {
+        display: block;
+        width: 100%;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    /* FOR THE HERO SECTION */
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text h6 {
+        font-size: 20px;
+    }
+
+    .hero-text h1 {
+        font-size: 36px;
+    }
+
+    .hero-text p {
+        font-size: 16px;
+        width: 100%;
+    }
+
+    .hero-img img {
+        width: 80%;
+    }
+
+    .svg-container img {
+        width: 80%;
+        height: auto;
+    }
+
+    /* about section */
+    #about .about-details about h1 {
+        font-size: 40px;
+    }
+
+    #about .about-details about p {
+        font-size: 16px;
+    }
+}
+
+/* for mobile screen */
+@media screen and (max-width: 768px) {
+
+    h1 {
+        font-size: 25px !important;
+        margin: 20px 0 !important;
+    }
+
+    h2 {
+        font-size: 18px !important;
+    }
+
+    h3 {
+        font-size: 16px !important;
+    }
+
+    h4 {
+        font-size: 15px !important;
+    }
+
+    p {
+        font-size: 14px !important;
+    }
+
+
+    .hero-text h6 {
+        font-size: 18px;
+    }
+
+    .hero-text h1 {
+        font-size: 30px;
+    }
+
+    .hero-text p {
+        font-size: 14px;
+        width: 100%;
+    }
+
+    .hero-img img {
+        width: 70%;
+    }
+
+    .logo {
+        width: 90px;
+    }
+
+    .svg-container img {
+        width: 90%;
+        height: auto;
+    }
+
+    /* about section */
+    #about .about-details {
+        flex-direction: column;
+    }
+
+    .about-details about {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .about-img img {
+        width: 100%;
+        height: 300px;
+    }
+
+    .about-img-box {
+        width: 62%;
+        height: 200px;
+        transform: translate(-6%, 40%);
+        padding: 20px 20px 20px 40px;
+    }
+
+    .about-img-box h2 {
+        font-size: 18px;
+    }
+
+    .about-img-box h4 {
+        font-size: 12px;
+    }
+
+    .about-img-box .btn {
+        padding: 10px 20px;
+        border-radius: 8px;
+    }
+
+    /* SERVICES */
+
+    #service .about-details {
+        flex-direction: column;
+    }
+
+    .card {
+        flex: 0 0 100%;
+    }
+
+    /* OUR MISSION SECTION */
+    .container .mission-details {
+        flex-direction: column;
+    }
+
+    .mission-details article h1 {
+        font-size: 30px;
+    }
+
+    .mission-details article h3 {
+        font-size: 20px;
+    }
+
+
+    /* FAQ SECTION */
+    .faq-details {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .faq-details article {
+        width: 100%;
+    }
+
+    .faq-details article h1 {
+        font-size: 30px;
+    }
+
+    .faq-details .faq-image img {
+        width: 100%;
+    }
+
+
+    /* BOOK US */
+    .book-us {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .book-us-details,
+    .contact-form {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .contact-form {
+        margin-top: 2rem;   }
+}
