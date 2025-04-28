@@ -35,7 +35,7 @@
         width: 250px;
         background-color: white;
         text-align: left;
-        padding: 50px 20px 20px 20px;
+        padding: 150px 20px 20px 20px;
         box-shadow: 4px 0 6px rgba(0, 0, 0, 0.1);
         transition: left 0.3s ease-in-out;
         z-index: 1000;
@@ -170,6 +170,7 @@
         height: 200px;
         transform: translate(-6%, 40%);
         padding: 20px 20px 20px 40px;
+        z-index: 10000;
     }
 
     .about-img-box h2 {
@@ -241,5 +242,35 @@
     }
 
     .contact-form {
-        margin-top: 2rem;   }
+        margin-top: 2rem;
+    }
+
+
+    /* FOR THE CONTACT US PAGE */
+    section.contact-text .container article h1 {
+        font-size: 30px !important;
+        margin: 20px 0 !important;
+    }
+
+    section.contact-text .container {
+        flex-direction: column;
+    }
+
+    section.contact-text .container article:nth-child(2) {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: left;
+        gap: 30px;
+    }
+
+    section.contact-text .container article {
+        width: 100%;
+    }
+
+
+    /* FOR THE SERVICE .HTML */
+
+    section.service-mission{
+        margin-top: 40px;
+    }
 }

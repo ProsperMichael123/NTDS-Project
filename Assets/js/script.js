@@ -24,6 +24,17 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+// TO KEEP THE ACTIVE NAV-LINK
+const currentPage = window.location.pathname;
+const navLinks = document.querySelectorAll(".nav-links ul li a");
+
+navLinks.forEach(link => {
+  if (link.getAttribute("href") === currentPage.substring(currentPage.lastIndexOf("/") + 1)) {
+    link.classList.add("active");
+  }
+});
+
+
 // CARD SLIDDER FOR THE SERVIECC SECTION
 const track = document.querySelector('.slider-track');
 const prevBtn = document.getElementById('prevBtn');

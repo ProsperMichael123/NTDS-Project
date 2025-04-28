@@ -1,0 +1,30 @@
+section.contact-text {
+    background-color: #F1F1F1;
+}
+
+section.contact-text .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+section.contact-text .container article {
+    width: 40%;
+}
+
+section.contact-text .container article p {
+    line-height: 32px;
+}
+
+.container .mission-details img {
+    width: 94%;
+}
+
+.container .mission-details h2 {
+    color: #5d0b90;
+    text-transform: uppercase;
+}
+
+
+.container .mission-details p {
+    line-height: 36px;
+}
