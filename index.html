@@ -18,22 +18,23 @@
 
 <body>
     <nav class="nav-bar">
-        <img src="./Assets/images/ndts logo2.png" alt="NDTS LOGO" class="logo">
+                <img onclick="window.location.href='index.html';" src="./Assets/images/ndts logo2.png" alt="NDTS LOGO" class="logo">
 
         <div class="hamburger" id="hamburger">&#9776;</div>
 
         <div class="nav-links" id="nav-links">
             <div class="menu-logo-container" id="menu-logo-container">
-                <img src="./Assets/images/ndts logo2.png" alt="NDTS LOGO" class="logo">
+                <img onclick="window.location.href='index.html';" src="./Assets/images/ndts logo2.png" alt="NDTS LOGO" class="logo">
             </div>
+
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="#">Services</a></li>
+                <li><a href="services.html">Services</a></li>
                 <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <button class="nav-btn-1 btn">Join Our Team</button>
             </ul>
-            <button class="nav-btn-1 btn">Join Our Team</button>
         </div>
     </nav>
 
@@ -47,7 +48,7 @@
                     solutions that empower businesses, enhance experiences,
                     and drive digital transformation.
                 </p>
-                <button class="hero-btn btn">Let's get started</button>
+                <button class="hero-btn btn" onclick="window.location.href='contact.html';">Let's get started</button>
             </article>
 
             <article class="svg-container">
@@ -83,7 +84,7 @@
                     <div class="about-img-box">
                         <h2>We provide a wide range of services for our clients</h2>
                         <h4>Our expertise ensures reliability, efficiency and long term success. For enquiries:</h4>
-                        <button class="btn">Schedule a call</button>
+                        <button class="btn" onclick="window.location.href='contact.html';">Schedule a call</button>
                     </div>
                 </div>
             </div>
@@ -105,7 +106,7 @@
                             pricing model.
                         </p>
 
-                        <button class="btn">View All</button>
+                        <button class="btn" onclick="window.location.href='services.html';">View All</button>
                     </about>
                 </article>
 
@@ -131,8 +132,8 @@
                     </div>
 
                     <div class="slider-buttons">
-                        <button id="prevBtn">⬅️</button>
-                        <button id="nextBtn">➡️</button>
+                        <button id="prevBtn"><i class="fas fa-arrow-left"></i></button>
+                        <button id="nextBtn"><i class="fas fa-arrow-right"></i></button>
                     </div>
                 </article>
             </div>
@@ -240,11 +241,11 @@
                         </div>
                         <div class="email">
                             <i class="fa fa-envelope"></i> <!-- Email Icon -->
-                            <p>ndts@career.com</p>
+                            <p><a href="mailto:ndts@career.com">Mail us @ndts@career.com</a></p>
                         </div>
                         <div class="phone">
                             <i class="fa fa-phone"></i> <!-- Phone Icon -->
-                            <p>+1(123)4567890</p>
+                            <p><a href="tel:+1(234)456789">Phone us @ +1(123)4567890</a></p>
                         </div>
                     </div>
                 </div>

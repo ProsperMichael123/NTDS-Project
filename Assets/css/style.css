@@ -11,23 +11,23 @@ body {
     padding: 50px 6% !important;
 }
 
-h1{
+h1 {
     font-size: 40px !important;
 }
 
-h2{
+h2 {
     font-size: 30px !important;
 }
 
-h3{
+h3 {
     font-size: 24px !important;
 }
 
-h4{
+h4 {
     font-size: 20px !important;
 }
 
-p{
+p {
     font-size: 20px !important;
 }
 
@@ -57,12 +57,13 @@ p span {
 .logo {
     width: 120px;
     transition: width 0.3s ease;
+    cursor: pointer;
 }
 
 .nav-links {
     display: flex;
     align-items: center;
-    transition:\ all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .menu-logo-container {
@@ -98,16 +99,18 @@ p span {
     transition: color 0.3s ease;
     font-weight: 700;
     position: relative;
+
+    overflow: hidden; 
 }
 
 .nav-links ul li a::before,
 .nav-links ul li a::after {
     content: "";
     position: absolute;
-    height: 2px;
+    height: 3px;
     background-color: #5d0b90;
     width: 0;
-    transition: width 0.3s ease;
+    transition: width 0.4s ease;
     margin: -5px 0;
 }
 
@@ -129,7 +132,16 @@ p span {
 .nav-links ul li a:hover {
     color: #5d0b90;
 }
-  
+
+.nav-links ul li a.active {
+    color: #5d0b90;
+}
+
+.nav-links ul li a.active::before{
+    width: 50%;
+}
+
+
 /* Hamburger Icon */
 .hamburger {
     font-size: 35px;
@@ -272,7 +284,7 @@ p span {
     padding: 30px 0 0 0;
 }
 
-#service  article h1{
+#service article h1 {
     color: #5d0b90;
 }
 
@@ -338,7 +350,6 @@ p span {
     cursor: pointer;
 }
 
-
 /* OUR MISSION */
 .mission {
     background-color: #EDEBEB;
@@ -373,7 +384,7 @@ p span {
 
 
 /* FAQ SECTION */
-#faq .faq-details h1{
+#faq .faq-details h1 {
     color: #5d0b90;
 }
 
@@ -531,6 +542,15 @@ section.book-us-section {
     box-sizing: border-box;
 }
 
+p a {
+    text-decoration: none;
+    color: white;
+}
+
+p a:hover{
+    text-decoration: underline;
+}
+
 .contact-form h2 {
     font-size: 2rem;
     margin-bottom: 1.5rem;
@@ -548,7 +568,7 @@ section.book-us-section {
 .contact-form textarea {
     width: 100%;
     font-size: 12px;
-    padding: 1em;
+    padding: 1em !important;
     margin-bottom: 1.5rem;
     border-radius: 4px;
     border: 1px solid #ccc;
