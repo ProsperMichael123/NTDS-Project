@@ -42,3 +42,11 @@ section.contact-text .container article:nth-child(2) i {
     border-radius: 50%;
     font-size: 25px;
 }
+
+span{
+    color: #5d0b90;
+}
+
+h1{
+    text-transform: capitalize;
+}

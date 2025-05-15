@@ -11,8 +11,8 @@ section.contact-text .container article {
     width: 40%;
 }
 
-section.contact-text .container article p {
-    line-height: 32px;
+section.contact-text .container .mission-details article ul li{
+    text-transform: capitalize !important;
 }
 
 .container .mission-details img {
@@ -26,5 +26,6 @@ section.contact-text .container article p {
 
 
 .container .mission-details p {
-    line-height: 36px;
+    line-height: 30px;
+    text-transform: capitalize;
 }

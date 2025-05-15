@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NDTS - Home Page</title>
+    <title>NTDS - Home Page</title>
     <link rel="stylesheet" href="Assets/css/style.css">
     <link rel="stylesheet" href="./Assets/css/mediaqueries.css">
 
@@ -14,17 +14,29 @@
     <!-- AOS Library (CDN) -->
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+    <!-- Preload Images -->
+    <link rel="preload" href="Assets/images/pexels-tima-miroshnichenko-5453828.jpg" as="image" type="image/jpeg" />
+    <link rel="preload" href="Assets/images/pexels-yankrukov-7693223.jpg" as="image" type="image/jpeg" />
+    <link rel="preload" href="Assets/images/pexels class.jpg" as="image" type="image/jpeg" />
+
+    <!-- preload video -->
+    <link rel="preload"
+        href="Assets/vid/Company Videos, Download The BEST Free 4k Stock Video Footage & Company HD Video Clips.mp4">
+
 </head>
 
 <body>
     <nav class="nav-bar">
-                <img onclick="window.location.href='index.html';" src="./Assets/images/ndts logo2.png" alt="NDTS LOGO" class="logo">
+        <img onclick="window.location.href='index.html';" src="./Assets/images/ndts logo2.png" alt="NTDS LOGO"
+            class="logo">
 
         <div class="hamburger" id="hamburger">&#9776;</div>
 
         <div class="nav-links" id="nav-links">
             <div class="menu-logo-container" id="menu-logo-container">
-                <img onclick="window.location.href='index.html';" src="./Assets/images/ndts logo2.png" alt="NDTS LOGO" class="logo">
+                <img onclick="window.location.href='index.html';" src="./Assets/images/ndts logo2.png" alt="NTDS LOGO"
+                    class="logo">
             </div>
 
             <ul>
@@ -42,17 +54,36 @@
         <section class="hero container">
             <article class="hero-text">
                 <!-- <h6>We are proud <br> of the work <br>we've done</h6> -->
-                <h1>We are digital <br>products <br>creators</h1>
-                <p><span>AT NEXTGEN TECHNOVA DIGITAL SOLUTIONS (NDTS)</span>,
-                    We are committed to pioneering innovative tech and digital
-                    solutions that empower businesses, enhance experiences,
-                    and drive digital transformation.
+                <h1>Empowering Innovation <br>with Tech & Digital <br>Precision</h1>
+                <p><span>AT NEXTGEN TECHNOVA DIGITAL SOLUTIONS (NTDS)</span>,
+                    We don't just build websites or run ads, we design, code, and market future proof solutions. Whether
+                    you're a startup, brand, or enterprise, our unified expert team of developers, designers, and
+                    digital marketers deliver top-tier results tailored to your goals.
                 </p>
-                <button class="hero-btn btn" onclick="window.location.href='contact.html';">Let's get started</button>
+
+                <div class="hero-btn">
+                    <button class="hero-btn btn" onclick="window.location.href='contact.html';">Start a Project</button>
+                    <button class="hero-btn btn" onclick="window.location.href='contact.html';">View Our Work</button>
+                </div>
             </article>
 
-            <article class="svg-container">
-                <img src="./Assets/svg/Innovation-rafiki.svg" alt="Description of the SVG">
+            <article class="hero-image">
+                <div class="media-container">
+                    <div class="media-track">
+                        <div class="media-item">
+                            <img src="Assets/images/pexels-yankrukov-7693223.jpg" alt="Image 1" />
+                        </div>
+                        <div class="media-item">
+                            <img src="Assets/images/pexels-tima-miroshnichenko-5453828.jpg" alt="Image 2" />
+                        </div>
+                        <div class="media-item">
+                            <img src="Assets/images/pexels class.jpg" alt="Image 3" />
+                        </div>
+                    </div>
+
+                    <span class="img-button left">&#10094;</span>
+                    <span class="img-button right">&#10095;</span>
+                </div>
             </article>
         </section>
 
@@ -60,27 +91,37 @@
         <section id="about" class="about" data-aos="fade-up">
             <div class="container">
 
-                <h1 class="section-title">ABOUT US</h1>
+                <h4 class="section-title">ABOUT US</h4>
 
                 <div class="about-details">
                     <about>
-                        <h1>We're Tech and Digital Product Creators.</h1>
+                        <h2>Who We Are?</h2>
+                        <p>
+                            <span>
+                                NEXTGEN TECHNOVA DIGITAL SOLUTIONS (NTDS)
+                            </span>
+                            Is a future focused tech and digital agency dedicated to building high impact...
+                        </p>
+                        <button class="hero-btn btn" onclick="window.location.href='about.html';">View More</button>
+
                     </about>
 
                     <about>
+                        <h2>Why We Exist?</h2>
                         <p>
-                            <span>
-                                AT NEXTGEN TECHNOVA DIGITAL SOLUTIONS (NDTS)
-                            </span>
-                            We are committed to pioneering innovative tech and digital
-                            solutions that empower businesses, enhance experiences,
-                            and drive digital transformation.
+                            We believe Technology and Marketing should not exist in Silos. NTDS exists to bridge the gap
+                            offering clients a single powerful
                         </p>
+                        <button class="hero-btn btn" onclick="window.location.href='about.html';">View More</button>
+
                     </about>
                 </div>
 
                 <div class="about-img">
-                    <img src="./Assets/images/clay-banks-oO6Gm16Cqcg-unsplash.jpg" alt="about us image">
+                    <!-- <img src="./Assets/images/clay-banks-oO6Gm16Cqcg-unsplash.jpg" alt="about us image"> -->
+                    <video
+                        src="./Assets/vid/Company Videos, Download The BEST Free 4k Stock Video Footage & Company HD Video Clips.mp4"
+                        autoplay loop muted playsinline></video>
                     <div class="about-img-box">
                         <h2>We provide a wide range of services for our clients</h2>
                         <h4>Our expertise ensures reliability, efficiency and long term success. For enquiries:</h4>
@@ -94,10 +135,10 @@
         <!-- OUR SERICES SECTION -->
         <section id="service" class="service" data-aos="fade-in">
             <div class="container">
-                <h1 class="section-title">OUR SERVICES</h1>
+                <h4 class="section-title">OUR SERVICES</h4>
                 <article class="about-details">
                     <about>
-                        <h1>Our customised solutions for you.</h1>
+                        <h2>Our customised solutions for you.</h2>
                     </about>
 
                     <about>
@@ -115,19 +156,19 @@
                         <div class="slider-track">
                             <div class="card"
                                 style="background-repeat: no-repeat; background-position: center; background-size: cover;">
-                                Card 1</div>
+                            </div>
 
                             <div class="card"
                                 style="background-repeat: no-repeat; background-position: center; background-size: cover;">
-                                Card 2</div>
+                            </div>
 
                             <div class="card"
                                 style="background-repeat: no-repeat; background-position: center; background-size: cover;">
-                                Card 3</div>
+                            </div>
 
                             <div class="card"
                                 style="background-repeat: no-repeat; background-position: center; background-size: cover;">
-                                Card 4</div>
+                            </div>
                         </div>
                     </div>
 
@@ -142,23 +183,54 @@
         <!-- OUR MISSION -->
         <section id="msision" class="mission " data-aos="zoom-in">
             <div class="container">
-                <h1 class="section-title">
+                <h4 class="section-title">
                     OUR MISSION
-                </h1>
+                </h4>
                 <div class="mission-details">
-
                     <article class="our--mission-first-half">
-                        <h1>Empowering Tech and Digital Serivices with Innovative Solutions.</h1>
-
-                        <img src="./Assets/images/thumb-card4.png" alt="">
+                        <img src="./Assets/images/pexels-olly-3769021.jpg" alt="">
                     </article>
 
                     <article class="our-mission-second-half">
-                        <h3>Our structured plan will ensure efficient operations, scalability, and long term success by
+                        <h2>Empowering <span>Tech and Digital Serivices</span> with Innovative Solutions.</h2>
+                        <p>Our structured plan will ensure efficient operations, scalability, and long term success by
                             outlining key steps in business development, services executions and growth strategy.
-                        </h3>
+                        </p>
 
-                        <img src="./Assets/images/windows-4nSKsoYyuPQ-unsplash.jpg" alt="">
+                        <article class="custom-accordion">
+                            <ul class="accordion-list">
+                                <li class="accordion-item">
+                                    <details>
+                                        <summary>
+                                            <span class="icon">&#9660;</span>
+                                            <span class="summary-text">What is our mission?</span>
+                                        </summary>
+                                        <p>Our mission is to deliver intelligent, scalable, and creative digital solutions that empower businesses to thrive in a fast-changing world.</p>
+                                    </details>
+                                </li>
+                                <li class="accordion-item">
+                                    <details>
+                                        <summary>
+                                            <span class="icon">&#9660;</span>
+                                            <span class="summary-text">Where do we operate?</span>
+                                        </summary>
+                                        <p>We operate in multiple regions, focusing on delivering services locally and
+                                            globally.</p>
+                                    </details>
+                                </li>
+                                <li class="accordion-item">
+                                    <details>
+                                        <summary>
+                                            <span class="icon">&#9660;</span>
+                                            <span class="summary-text">How do we support clients?</span>
+                                        </summary>
+                                        <p>We support clients through dedicated account managers, technical expertise,
+                                            and 24/7 support.</p>
+                                    </details>
+                                </li>
+                            </ul>
+                        </article>
+
 
 
                     </article>
@@ -169,49 +241,44 @@
         <!-- FAQ SECTION -->
         <section id="faq" class="faq" data-aos="zoom-in">
             <div class="container">
-                <h1 class="section-title">FAQ</h1>
+                <h4 class="section-title">FAQ</h4>
 
                 <div class="faq-details">
                     <article class="faq-image">
-                        <h1>Our Frequently Asked Questions.</h1>
-                        <img src="./Assets/images/wallpaperflare.com_wallpaper (6).jpg" alt="FAQ IMG">
+                        <h2>Our Frequently Asked Questions.</h2>
+                        <img src="./Assets/images/pexels-yankrukov-7793120.jpg" alt="FAQ IMAGE">
                     </article>
 
                     <article class="faq-section">
                         <div class="faq">
                             <div class="faq-item">
-                                <div class="faq-question">What is NDTS?</div>
-                                <div class="faq-answer">
-                                    NDTS stands for National Development and Training Services. It
-                                    focuses on training individuals across various skillsets.
+                                <div class="faq-question"><p>What type of businesses do you work with?</p></div>
+                                <div class="faq-answer"><p>
+                                    We work with startups, SMEs, Brands, Agencies, and enterprise-level organizations across industries.</p>
                                 </div>
                             </div>
                             <div class="faq-item">
-                                <div class="faq-question">How do I apply?</div>
-                                <div class="faq-answer">
-                                    Visit the official website, go to the "Apply" section, and fill
-                                    in the application form with accurate details.
+                                <div class="faq-question"><p>Can i hire NTDS for both tech and digital marketing services?</p></div>
+                                <div class="faq-answer"><p>
+                                   Yes. Our team is structured to offer both tech development and digital marketing in-house, seemlessly.</p>
                                 </div>
                             </div>
                             <div class="faq-item">
-                                <div class="faq-question">Is the program certified?</div>
-                                <div class="faq-answer">
-                                    Yes, NDTS is certified by national education and skill
-                                    development authorities.
+                                <div class="faq-question"><p>How much does your services cost?</p></div>
+                                <div class="faq-answer"><p>
+                                   We offer flexible pricing based on project scope, goals, and timelines. COntact us for a tailored quote.</p>
                                 </div>
                             </div>
                             <div class="faq-item">
-                                <div class="faq-question">How long is the training?</div>
-                                <div class="faq-answer">
-                                    The training duration varies by course. Most programs run from 3
-                                    to 6 months.
+                                <div class="faq-question"><p>How long does it take to develop a website or an app?</p></div>
+                                <div class="faq-answer"><p>
+                                   Depending on complexity, 2-8 weeks for websites, and 6-12 weeks for mobile/web apps.</p>
                                 </div>
                             </div>
                             <div class="faq-item">
-                                <div class="faq-question">Do you offer online classes?</div>
-                                <div class="faq-answer">
-                                    Yes, we offer both physical and online training sessions
-                                    depending on the course.
+                                <div class="faq-question"><p>Do you offer post launnch services?</p></div>
+                                <div class="faq-answer"><p>
+                                    Absolutely. We provide maintainance, optimization, and marketing support after project delivery.</p>
                                 </div>
                             </div>
                         </div>
@@ -223,29 +290,25 @@
 
         <!-- BOOKING SECTION -->
         <section class="book-us-section" data-aos="zoom-in">
-            <h1 class="section-title">BOOK US</h1>
+            <h4 class="section-title">BOOK US</h4>
             <article class="book-us">
-                <div class="book-us-details">
-                    <h1>We’re ready to assist you! Let’s make something amazing together.</h1>
+                <div class="book-us-details">                    <h1>Get In Touch With Us..</h1>
 
-                    <p>AT NEXTGEN TECHNOVA DIGITAL SOLUTIONS (NDTS),
-                        We are committed to pioneering innovative tech and digital
-                        solutions that empower businesses, enhance experiences,
-                        and drive digital transformation.
-                    </p>
+
+                    <p>We are just one message away. Whether you have questions, want to kick off a project, or need expert advice - our team is here to help.</p>
 
                     <div class="contact-info">
                         <div class="location">
                             <i class="fa fa-map-marker"></i>
-                            <p>123 FESTAC City, LAGOS NIGERIA</p>
+                            <p>Remote & LAGOS NIGERIA</p>
                         </div>
                         <div class="email">
                             <i class="fa fa-envelope"></i> <!-- Email Icon -->
-                            <p><a href="mailto:ndts@career.com">Mail us @ndts@career.com</a></p>
+                            <p><a href="mailto:hello@ntdsofficial.com">Mail us: hello@ntdsofficial.com</a></p>
                         </div>
                         <div class="phone">
                             <i class="fa fa-phone"></i> <!-- Phone Icon -->
-                            <p><a href="tel:+1(234)456789">Phone us @ +1(123)4567890</a></p>
+                            <p><a href="tel:+234xxxxxxx">Phone us @ +234xxxxxxxxx</a></p>
                         </div>
                     </div>
                 </div>
@@ -256,23 +319,24 @@
                         <input type="text" id="name" name="name" placeholder="Your Name" required>
                         <input type="email" id="email" name="email" placeholder="Your Email" required>
                         <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
-                
+
                         <label for="service">What Information Do You Need?</label>
                         <select id="service" name="service">
                             <option value="service">Service Inquiry</option>
                             <option value="pricing">Pricing</option>
                             <option value="consultation">Consultation</option>
                         </select>
-                
-                        <textarea id="message" name="message" placeholder="Write your message here..." rows="4" required></textarea>
-                
+
+                        <textarea id="message" name="message" placeholder="Write your message here..." rows="4"
+                            required></textarea>
+
                         <!-- Placeholder for success message -->
                         <div id="success-message" style="color: green; font-weight: bold; margin-top: 10px;"></div>
-                
+
                         <button type="submit" class="submit-btn">Submit</button>
                     </form>
                 </div>
-                
+
             </article>
         </section>
 
@@ -293,4 +357,5 @@
     </script>
     <script src="./Contact-Us/script.js"></script>
 </body>
+
 </html>
