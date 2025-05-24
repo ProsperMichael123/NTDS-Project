@@ -131,10 +131,6 @@
         width: 100%;
     }
 
-    .details-section .container article div.details-3 {
-        display: none;
-    }
-
     .details-section .container article div {
         width: 100% !important;
     }
@@ -147,11 +143,15 @@
     justify-content: space-between;
 }
 
+.details-section .container .details h3{
+    text-transform: capitalize;
+}
+
 .details-section .container article div {
     width: 30%;
 }
 
 .details-section .container article div p {
-    line-height: 27px;
+    line-height: 26px;
     color: grey;
 }
